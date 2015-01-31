@@ -40,3 +40,7 @@
     )
   )
 (global-set-key (kbd "C-c p") 'swap-buffers-in-windows)
+
+;; disable maximize frame 
+;; in .emacs.d/lisp/init-misc.el
+;; comment line (add-hook 'window-setup-hook 'maximize-frame t)
