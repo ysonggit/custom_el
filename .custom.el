@@ -44,3 +44,11 @@
 ;; disable maximize frame 
 ;; in .emacs.d/lisp/init-misc.el
 ;; comment line (add-hook 'window-setup-hook 'maximize-frame t)
+;; open eshell
+(defun open-eshell-other-buffer ()
+  "Open eshell in other buffer"
+  (interactive)
+  (split-window-vertically)
+  (eshell))
+(global-set-key [C-f1] 'open-eshell-other-buffer)
+(global-set-key [C-f2] 'eshell)
