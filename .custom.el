@@ -52,3 +52,9 @@
   (eshell))
 (global-set-key [C-f1] 'open-eshell-other-buffer)
 (global-set-key [C-f2] 'eshell)
+
+(set-default-font "Monaco 14")
+;; could not show first two rows on Mac OS
+;; (require 'maxframe)
+;; (add-hook 'window-setup-hook 'maximize-frame t)
+(when window-system (set-frame-size (selected-frame) 200 120))
